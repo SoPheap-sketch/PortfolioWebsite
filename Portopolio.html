@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tevanda | Full-Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Simple Color Palette */
+        :root {
+            --color-primary-bg: #f8f9fa;
+            /* Light Gray/White Background */
+            --color-secondary-bg: #ffffff;
+            /* Pure White Card Background */
+            --color-text: #343a40;
+            /* Dark Gray/Black for Main Text */
+            --color-accent: #4F9CFF;
+            /* Sky Blue Accent */
+            --color-navy: #1A2C5B;
+            /* Professional Navy Blue */
+        }
+
+        /* Custom utility classes */
+        .bg-primary-bg {
+            background-color: var(--color-primary-bg);
+        }
+
+        .bg-secondary-bg {
+            background-color: var(--color-secondary-bg);
+        }
+
+        .text-accent {
+            color: var(--color-accent);
+        }
+
+        .text-navy {
+            color: var(--color-navy);
+        }
+
+        .border-accent {
+            border-color: var(--color-accent);
+        }
+
+        .hover\:text-accent:hover {
+            color: var(--color-accent);
+        }
+
+        /* General Body and Scroll behavior */
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--color-primary-bg);
+            color: var(--color-text);
+            scroll-behavior: smooth;
+        }
+
+        /* Project Card Hover Effect */
+        .project-card {
+            transition: all 0.3s ease-in-out;
+            border: 1px solid #e9ecef;
+            /* Light border for separation */
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(79, 156, 255, 0.1), 0 4px 6px -2px rgba(79, 156, 255, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-primary-bg">
+
+    <header class="bg-secondary-bg shadow-md sticky top-0 z-20">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-3xl font-bold text-navy transition duration-300">Tevanda</a>
+            <nav>
+                <a href="#about" class="mx-3 text-navy hover:text-accent transition duration-300">01. About</a>
+                <a href="#skills" class="mx-3 text-navy hover:text-accent transition duration-300">02. Skills</a>
+                <a href="#projects" class="mx-3 text-navy hover:text-accent transition duration-300">03. Work</a>
+                <a href="#contact"
+                    class="ml-3 px-4 py-2 border border-accent rounded text-accent hover:bg-accent hover:text-white transition duration-300">04.
+                    Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+
+        <section id="hero" class="min-h-[50vh] flex items-center pt-24 pb-16">
+            <div class="max-w-3xl">
+                <p class="text-accent text-lg mb-4 font-mono">Hi, my name is</p>
+                <h1 class="text-6xl sm:text-7xl font-bold text-navy mb-4">Chhann Sopheap.</h1>
+                <h2 class="text-5xl sm:text-6xl font-bold text-gray-600 mb-6">I build systems for the web.</h2>
+                <p class="text-xl max-w-lg text-gray-600">
+                    I am a passionate **Full-Stack Developer** specializing in building clean, efficient, and
+                    maintainable web applications using **PHP/Laravel**, **Tailwind CSS**, and modern JavaScript.
+                </p>
+                <a href="#projects"
+                    class="mt-10 inline-block px-6 py-3 border-2 border-accent rounded text-accent text-lg font-semibold hover:bg-accent hover:text-white transition duration-300">View
+                    My Featured Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="mb-24 pt-20 max-w-5xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-navy mb-10">
+                <span class="text-accent font-mono text-2xl mr-3">01.</span> About Me
+            </h2>
+            <div class="grid md:grid-cols-3 gap-10 text-lg text-gray-600 bg-secondary-bg p-8 rounded-xl shadow-lg">
+                <div class="md:col-span-2">
+                    <p class="mb-4">I thrive on creating robust backend solutions and elegant, user-friendly frontends.
+                        My expertise spans:
+                    <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
+                        <li><strong class="text-navy">Laravel/PHP</strong> for scalable backend architecture.</li>
+                        <li><strong class="text-navy">Tailwind CSS</strong> for rapid, responsive UI development.</li>
+                        <li><strong class="text-navy">SQL</strong> for efficient data management.</li>
+                    </ul>
+                    </p>
+                    <p class="mb-4">My background in full-stack development and commitment to UI/UX best practices
+                        allows me to deliver systems that are both powerful and delightful to use.</p>
+                    <blockquote class="border-l-4 border-accent pl-4 py-2 italic text-gray-700">
+                        <p>Fluent in **Japanese**, which provides a unique advantage in documentation and international
+                            team collaboration.</p>
+                    </blockquote>
+                </div>
+                <div class="flex justify-center items-start md:col-span-1">
+                    <div class="flex justify-center items-start md:col-span-1">
+                        <div class="w-64 h-64 border-4 border-accent rounded-full p-1 shadow-xl">
+                            <img src="./image/me.jpg" alt="Sopheap Professional Headshot"
+                                class="w-full h-full rounded-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-24 pt-20 max-w-4xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-navy mb-10">
+                <span class="text-accent font-mono text-2xl mr-3">02.</span> Core Skills
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 bg-secondary-bg p-8 rounded-xl shadow-lg">
+                <div>
+                    <h3 class="text-xl font-semibold text-accent mb-4">Back-End & Frameworks</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="font-mono">PHP / **Laravel**</li>
+                        <li class="font-mono">C# (Windows Forms)</li>
+                        <li class="font-mono">OOP / REST APIs</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-accent mb-4">Front-End & UI/UX</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="font-mono">**Tailwind CSS** / Bootstrap</li>
+                        <li class="font-mono">JavaScript </li>
+                        <li class="font-mono">HTML5 / CSS3</li>
+                        <li class="font-mono">Responsive Design</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-accent mb-4">Database & Tools</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="font-mono">MySQL / SQL Server</li>
+                        <li class="font-mono">**Git / GitHub**</li>
+                        <li class="font-mono">CRUD Operations</li>
+                        <li class="font-mono">Project Management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-24 pt-20">
+            <h2 class="text-4xl font-extrabold text-navy mb-10 text-center">
+                <span class="text-accent font-mono text-2xl mr-3">03.</span> Featured Projects
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="project-card bg-secondary-bg rounded-xl shadow-lg p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="text-3xl text-accent mb-4">🛒</div>
+                        <h3 class="text-2xl font-semibold text-navy mb-3">E-Commerce Store (Web)</h3>
+                        <p class="text-gray-700 mb-4">A fully responsive e-commerce platform built with the robust
+                            **Laravel framework** for secure data handling and MVC architecture.</p>
+                        <ul class="flex flex-wrap gap-2 text-sm font-mono text-accent">
+                            <li class="bg-gray-100 px-3 py-1 rounded-full">Laravel</li>
+                            <li class="bg-gray-100 px-3 py-1 rounded-full">Tailwind CSS</li>
+                            <li class="bg-gray-100 px-3 py-1 rounded-full">MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 flex justify-end space-x-4">
+                        <a href="https://chhannsopheap.com" target="_blank"
+                            class="text-navy hover:text-accent transition duration-300">Demo &rarr;</a>
+                        <a href="" target="_blank" class="text-navy hover:text-accent transition duration-300">Code
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-secondary-bg rounded-xl shadow-lg p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="text-3xl text-accent mb-4">📚</div>
+                        <h3 class="text-2xl font-semibold text-navy mb-3">Installation Guides (Web)</h3>
+                        <p class="text-gray-700 mb-4">User-centric, responsive guides for email client setup,
+                            prioritizing clean UI/UX and interactive navigation.</p>
+                        <ul class="flex flex-wrap gap-2 text-sm font-mono text-accent">
+                            <li class="bg-gray-100 px-3 py-1 rounded-full">HTML5/CSS3</li>
+                            <li class="bg-gray-100 px-3 py-1 rounded-full">Tailwind CSS</li>
+                            <li class="bg-gray-100 px-3 py-1 rounded-full">JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 flex justify-end space-x-4">
+                        <a href="[Link to Live Demo]" target="_blank"
+                            class="text-navy hover:text-accent transition duration-300">Demo &rarr;</a>
+                        <a href="https://github.com/SoPheap-sketch/InventoryManagementSystem.git" target="_blank"
+                            class="text-navy hover:text-accent transition duration-300">Code &rarr;</a>
+                    </div>
+                </div>
+
+                <div
+                    class="project-card bg-secondary-bg rounded-xl shadow-lg p-6 flex flex-col justify-between opacity-70">
+                    <div>
+                        <div class="text-3xl text-gray-500 mb-4">💾</div>
+                        <h3 class="text-2xl font-semibold text-gray-500 mb-3">Stock Management (Desktop)</h3>
+                        <p class="text-gray-500 mb-4">A desktop application developed with C# and Windows Forms,
+                            demonstrating strong OOP structure and SQL Server integration.</p>
+                        <ul class="flex flex-wrap gap-2 text-sm font-mono text-gray-500">
+                            <li class="bg-gray-100 px-3 py-1 rounded-full">C#</li>
+                            <li class="bg-gray-100 px-3 py-1 rounded-full">Windows Forms</li>
+                            <li class="bg-gray-100 px-3 py-1 rounded-full">SQL Server</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 flex justify-end space-x-4">
+                        <a href="https://github.com/SoPheap-sketch" target="_blank"
+                            class="text-gray-500 hover:text-accent transition duration-300">Code &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="pt-20 text-center max-w-xl mx-auto">
+            <p class="text-accent font-mono text-lg mb-4">04. What's Next?</p>
+            <h2 class="text-5xl font-extrabold text-navy mb-6">Get In Touch</h2>
+            <p class="text-lg text-gray-700 mb-10">I'm currently seeking new full-stack opportunities and am eager to
+                contribute my skills to challenging projects. Whether you have a question or just want to connect, feel
+                free to reach out!</p>
+
+            <a href="mailto:chhannsopheap493@gmail.com" class=" inline-block px-8 py-4 border-2 border-accent rounded text-accent text-xl font-semibold
+                hover:bg-accent hover:text-white transition duration-300">
+                Say Hello
+            </a>
+
+            <div class="flex justify-center space-x-6 mt-12 text-2xl text-gray-600">
+                <a href="https://github.com/SoPheap-sketch" target="_blank"
+                    class="hover:text-accent transition duration-300">GitHub</a>
+                <!-- <a href="[Your LinkedIn URL]" target="_blank"
+                    class="hover:text-accent transition duration-300">LinkedIn</a> -->
+                <a href="mailto:[your-email@example.com]" class="hover:text-accent transition duration-300">Email</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-secondary-bg mt-16 p-6 text-center text-gray-500 text-sm border-t border-gray-200">
+        <p>Built by Tevanda | Designed with Tailwind CSS | &copy; <span id="year">2025</span></p>
+    </footer>
+
+    <script>
+        // Set current year dynamically for the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
